@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Mountains -->
+    <path
+        android:fillColor="#78909C"
+        android:pathData="M14,6l-3.75,5 2.85,3.8 -1.6,1.2C9.81,13.75 7,10 7,10l-6,8h22L14,6z"/>
+    <path
+        android:fillColor="#546E7A"
+        android:pathData="M5,15l4.5,-6 3.5,4.5 2.5,-3.01L21.17,18H3.08l1.92,-3z"/>
+
+    <!-- Lodge/Cabin -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M16,16 L16,20 L20,20 L20,16 L18,14 L16,16 Z"/>
+    <path
+        android:fillColor="#A1887F"
+        android:pathData="M15,13 L21,13 L18,10 L15,13 Z"/>
+
+</vector>

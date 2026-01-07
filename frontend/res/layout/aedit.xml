@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AeditActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar_edit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="Edit Place"
+            app:titleTextColor="@color/white"
+            app:titleCentered="true" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/loading_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="70dp"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/white">
+
+            <com.google.android.material.card.MaterialCardView style="@style/AdminCardView">
+                <LinearLayout style="@style/AdminCardLinearLayout">
+                    <TextView
+                        style="@style/AdminCardHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Basic Information" />
+
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Place Name (e.g., Goa)">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPlaceName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Location (e.g., India)">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPlaceLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/AdminCardView">
+                <LinearLayout style="@style/AdminCardLinearLayout">
+                    <TextView
+                        style="@style/AdminCardHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visit Details"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Suitable Months" android:layout_marginTop="12dp"/>
+                    <GridLayout android:id="@+id/months_grid" android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="4" android:layout_marginTop="8dp"/>
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_monsoon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Is it a Monsoon Destination?"/>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Average Budget (e.g., ₹2,500 - ₹4,000)">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etAvgBudget"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Local Language (e.g., Punjabi)">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etLocalLanguage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/AdminCardView">
+                <LinearLayout style="@style/AdminCardLinearLayout">
+                    <TextView
+                        style="@style/AdminCardHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Place Gallery"/>
+
+                    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:layout_marginTop="8dp">
+                        <LinearLayout android:id="@+id/image_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                            <ImageView
+                                android:id="@+id/btn_add_image"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/ic_add_photo"
+                                android:background="?attr/selectableItemBackground"
+                                android:scaleType="center"/>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/AdminCardView">
+                <LinearLayout style="@style/AdminCardLinearLayout">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/AdminCardHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Best Spots to Visit" />
+
+                        <ImageButton android:id="@+id/btn_add_spot" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_add_circle" android:layout_alignParentEnd="true" android:background="?attr/selectableItemBackgroundBorderless"/>
+                    </RelativeLayout>
+                    <LinearLayout android:id="@+id/spots_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/AdminCardView">
+                <LinearLayout style="@style/AdminCardLinearLayout">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/AdminCardHeader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Transport Options" />
+
+                        <ImageButton android:id="@+id/btn_add_transport" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_add_circle" android:layout_alignParentEnd="true" android:background="?attr/selectableItemBackgroundBorderless"/>
+                    </RelativeLayout>
+                    <LinearLayout android:id="@+id/transport_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/AdminCardView">
+                <LinearLayout style="@style/AdminCardLinearLayout">
+                    <TextView
+                        style="@style/AdminCardHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Own Transport Details"/>
+
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Destination Latitude">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etLatitude" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal|numberSigned" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Destination Longitude">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etLongitude" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal|numberSigned" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Estimated Toll Cost (One-Way)">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etTollCost" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Estimated Parking Cost (Per Day)">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etParkingCost" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/AdminCardView">
+                <LinearLayout style="@style/AdminCardLinearLayout">
+                    <TextView
+                        style="@style/AdminCardHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accommodation Costs (Per Day)"/>
+
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Standard Hotel Cost (₹)">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etHotelCostStandard" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="High-End Hotel Cost (₹)">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etHotelCostHigh" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout style="@style/AdminTextInputLayout" android:hint="Low-Budget Hotel Cost (₹)">
+                        <com.google.android.material.textfield.TextInputEditText android:id="@+id/etHotelCostLow" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/AdminCardView">
+                <LinearLayout style="@style/AdminCardLinearLayout">
+                    <TextView
+                        style="@style/AdminCardHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Food Costs (Per Person, Per Day)"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Standard Restaurant" android:textStyle="bold" android:layout_marginTop="12dp"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <EditText android:id="@+id/etFoodStdVeg" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Veg (₹)" android:inputType="numberDecimal"/>
+                        <EditText android:id="@+id/etFoodStdNonVeg" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Non-Veg (₹)" android:inputType="numberDecimal"/>
+                        <EditText android:id="@+id/etFoodStdCombo" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Combo (₹)" android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="High-End Restaurant" android:textStyle="bold" android:layout_marginTop="8dp"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <EditText android:id="@+id/etFoodHighVeg" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Veg (₹)" android:inputType="numberDecimal"/>
+                        <EditText android:id="@+id/etFoodHighNonVeg" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Non-Veg (₹)" android:inputType="numberDecimal"/>
+                        <EditText android:id="@+id/etFoodHighCombo" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Combo (₹)" android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Low-Budget Restaurant" android:textStyle="bold" android:layout_marginTop="8dp"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <EditText android:id="@+id/etFoodLowVeg" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Veg (₹)" android:inputType="numberDecimal"/>
+                        <EditText android:id="@+id/etFoodLowNonVeg" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Non-Veg (₹)" android:inputType="numberDecimal"/>
+                        <EditText android:id="@+id/etFoodLowCombo" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Combo (₹)" android:inputType="numberDecimal"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnSaveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#0D47A1"
+                android:text="Save Changes"
+                android:textColor="@android:color/white"
+                app:cornerRadius="8dp" />
+
+            <Button
+                android:id="@+id/btnResetForm"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"
+                android:text="Reset Changes"
+                android:textColor="#FF6B6B"
+                app:cornerRadius="8dp"
+                app:strokeColor="#FF6B6B" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/destino_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/destino_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Weekend"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".SubscriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTripDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AverifyProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddReviewActivity"
+            android:exported="false" />
+        <activity android:name=".NearbyPlacesActivity" />
+        <activity
+            android:name=".TripCameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapPickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Send_otp"
+            android:exported="false" />
+        <activity
+            android:name=".PreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SaveActivity"
+            android:exported="false" /> <activity
+        android:name=".MainActivity"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" /> <activity
+        android:name=".HomeActivity"
+        android:exported="false" />
+        <activity
+            android:name=".ExploreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TripActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" /> <activity
+        android:name=".DestinationDetailActivity"
+        android:exported="false" />
+        <activity
+            android:name=".TripDetailActivity"
+            android:exported="false" />
+        <activity android:name=".AnalysisActivity" />
+        <activity android:name=".ManageTipsActivity" />
+        <activity android:name=".UserTravelTipsActivity" />
+        <activity
+            android:name=".FutureTripDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompletedTripDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CancelledTripDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavedTripsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EstimateBudgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EstimateOwnbudgetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyMemoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FullscreenMediaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoritesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FilteredTripsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FolderContentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TermsPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UcontactActivity"
+            android:exported="false" /> <activity
+        android:name=".UsettingsActivity"
+        android:exported="false" />
+        <activity
+            android:name=".UserNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UtraveltripsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UaboutappActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UtermsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangepasswordActivity"
+            android:exported="false" /> <activity
+        android:name=".AdminhomeActivity"
+        android:exported="false" />
+        <activity
+            android:name=".AdminSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageplaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageTripsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AreviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddplaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditPlaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTravelTripsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecentAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAnalysis"
+            android:exported="false" />
+        <activity
+            android:name=".AdminContactSupport"
+            android:exported="false" />
+        <activity
+            android:name=".AviewtripsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Averifyprofile"
+            android:exported="false" />
+        <activity
+            android:name=".AeditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_tipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" /> <activity
+        android:name=".LocationActivity"
+        android:exported="false" />
+        <activity
+            android:name=".UviewdetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MediaViewActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.simats.weekend.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver
+            android:name=".TripBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.weekend.TRIP_ALARM" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

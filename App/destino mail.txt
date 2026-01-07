@@ -1,0 +1,97 @@
+simats.git@gmail.com
+Email Format:
+
+App Name: Destino
+Student Name: Srimathi S
+Reg No: 192221148
+Mobile no: 6374664494
+Course Code: SPIC725
+
+Short Description: (maximum of 80 characters):
+Your ultimate travel companion for seamless trip planning.
+
+Full Description: (maximum of 4000 characters):
+
+Destino: The Ultimate Travel & Trip Planner
+
+Destino is a comprehensive travel management application designed to streamline your journey from the planning phase to the final destination. Whether you are organizing a solo backpacking trip, a family vacation, or a weekend getaway, Destino provides the essential tools to plan, budget, and preserve your travel memories in one secure platform.
+
+Core Features
+
+Smart Trip Management Effortlessly organize your travel itineraries with our intuitive trip management system.
+
+Future Trips: Schedule upcoming journeys with detailed itineraries, including dates, destinations, and planned activities.
+
+Trip History: Maintain a digital log of your completed adventures for future reference.
+
+Saved & Cancelled Trips: Manage potential trip ideas and keep track of cancelled plans without losing data.
+
+Destination Discovery & Navigation Explore the world around you with integrated location services.
+
+Nearby Places: Instantly discover tourist attractions, restaurants, and essential services near your current location.
+
+Interactive Maps: Utilize advanced map integration to pin destinations and navigate routes efficiently.
+
+Explore: Browse through a curated list of popular destinations and hidden gems to inspire your next adventure.
+
+Budget Planning & Financial Tracking Take control of your travel finances with built-in budgeting tools.
+
+Budget Estimator: Calculate estimated costs for transportation, accommodation, and activities before you travel.
+
+Custom Budgeting: Set your own financial limits and track expenses to ensure you stay within your designated budget.
+
+Travel Memories & Media Preserve the moments that matter most.
+
+Media Gallery: Upload and organize photos and videos directly within specific trip folders.
+
+Camera Integration: Capture moments in real-time using the in-app camera features.
+
+Memory Timeline: Revisit your travel experiences through a structured timeline of your media and notes.
+
+Travel Tips & Community Reviews Make informed decisions with community-driven insights.
+
+User Reviews: Read and write reviews for destinations and attractions to help other travelers.
+
+Travel Tips: Access valuable travel advice, packing lists, and safety tips curated for various destinations.
+
+User Profile & Security
+
+Secure Authentication: Protect your data with secure login and OTP verification methods.
+
+Profile Management: Update your personal details and travel preferences easily.
+
+Privacy Focused: Your location data and personal information are handled with strict privacy standards, ensuring a safe user experience.
+
+App Permissions Overview To provide a seamless experience, Destino requires the following permissions:
+
+Location: To identify nearby places and assist with navigation.
+
+Camera & Storage: To capture and save trip photos and verify profile details.
+
+Network: To sync your trip data and fetch the latest travel information.
+
+Download Destino today and experience a smarter way to travel. Plan effectively, budget wisely, and create unforgettable memories.
+
+Privacy Policy URL: https://srimathi001.github.io/privacy_policy/
+Delete Account URL: https://srimathi001.github.io/delete_account/
+
+Emails: ranjithsuriya12345@gmail.com, ranjithkumarr2105@gmail.com, mrbadlydevilrk@gmail.com, rkrajasekar005@gmail.com, ranjithkumarsse@gmail.com, srimathisivan09@gmail.com, srimathis0907@gmail.com, nithyanandhan205@gmail.com, suriya4194@gmail.com, rn620086@gmail.com, nithishganesh1710@gmail.com, Sai444sabarish@gmail.com
+
+App Access credentials: (need to mention the email/username and password for every role in the app
+			eg: 
+			User login
+			email: rani@gmail.com
+			password: Rani@123
+
+			
+			Admin login
+			email: admin123@gmail.com
+			password: Admin@123
+                        
+                        )
+Attachments:
+App icon - (strictly width*height - 512*512 px)
+Feature graphic - (strictly width*height - 1024*500 px)
+Screenshots - (minimum of 5. run your app on a real mobile device and take screenshots. both width and height must be in between 320 px and 3,840 px - there is no exact width and height values)
+Android app bundle(.aab) file - (by default the file will be named as app-release.aab. change it as <your_app_name>-release.aab eg: upkeep-release.aab)
+package name must be 'com.simats.app_name'

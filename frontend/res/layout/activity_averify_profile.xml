@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Averifyprofile">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_verify_profile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="User Details"
+        app:titleCentered="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_initials"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="40dp"
+            app:cardBackgroundColor="@color/teal_200">
+            <TextView
+                android:id="@+id/tv_profile_initials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="SS"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/card_initials"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Suriya S"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:id="@+id/tv_profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="suriya.s@email.com"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_profile_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Active"
+                android:layout_marginTop="4dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/status_bg_active"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip Statistics"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView style="@style/SummaryCard"><LinearLayout style="@style/SummaryCardContent">
+                <TextView android:id="@+id/tv_future_trips_count" style="@style/SummaryCardNumber" android:textColor="#FF9800" tools:text="3" />
+                <TextView style="@style/SummaryCardLabel" android:text="Future" />
+            </LinearLayout></androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/SummaryCard"><LinearLayout style="@style/SummaryCardContent">
+                <TextView android:id="@+id/tv_ongoing_trips_count" style="@style/SummaryCardNumber" android:textColor="#00BCD4" tools:text="2" />
+                <TextView style="@style/SummaryCardLabel" android:text="Ongoing" />
+            </LinearLayout></androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:baselineAligned="false"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView style="@style/SummaryCard"><LinearLayout style="@style/SummaryCardContent">
+                <TextView android:id="@+id/tv_completed_trips_count" style="@style/SummaryCardNumber" tools:text="12" />
+                <TextView style="@style/SummaryCardLabel" android:text="Completed" />
+            </LinearLayout></androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/SummaryCard"><LinearLayout style="@style/SummaryCardContent">
+                <TextView android:id="@+id/tv_cancelled_trips_count" style="@style/SummaryCardNumber" android:textColor="#F44336" tools:text="5" />
+                <TextView style="@style/SummaryCardLabel" android:text="Cancelled" />
+            </LinearLayout></androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_block_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Block This User"
+        android:backgroundTint="@color/red"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

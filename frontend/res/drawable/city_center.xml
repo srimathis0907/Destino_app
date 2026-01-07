@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Building 1 -->
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M4,21 L4,10 L10,4 L16,10 L16,21 L4,21 M6,19 L14,19 L14,11 L10,7 L6,11 L6,19Z"/>
+
+    <!-- Building 2 -->
+    <path
+        android:fillColor="#9E9E9E"
+        android:pathData="M15,21 L15,12 L20,12 L20,21 L15,21 M17,19 L18,19 L18,14 L17,14 L17,19Z"/>
+
+    <!-- Windows -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8,12h2v2H8z M8,15h2v2H8z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M11,12h2v2h-2z M11,15h2v2h-2z"/>
+
+</vector>

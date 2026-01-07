@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This creates a white ring shape, like a classic shutter button -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <stroke
+        android:width="4dp"
+        android:color="@android:color/white" />
+
+    <solid android:color="@android:color/transparent" />
+
+</shape>

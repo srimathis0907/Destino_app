@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="150dp"
+    android:height="150dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Background Ring (Inactive) -->
+    <path
+        android:pathData="M 50,10 A 40,40 0 1 1 49.9,10"
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="12"
+        android:fillColor="@android:color/transparent"/>
+
+    <!-- Blocked Segment (Red) -->
+    <path
+        android:pathData="M 50,10 A 40,40 0 0 1 84.14,25.86"
+        android:strokeColor="#FF6B6B"
+        android:strokeWidth="12"
+        android:fillColor="@android:color/transparent"/>
+
+    <!-- Active Segment (Teal) -->
+    <path
+        android:pathData="M 15.86,74.14 A 40,40 0 1 1 50,10"
+        android:strokeColor="#00B5B0"
+        android:strokeWidth="12"
+        android:fillColor="@android:color/transparent"/>
+
+</vector>
