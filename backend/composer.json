@@ -1,0 +1,7 @@
+{
+    "require": {
+        "google/apiclient": "^2.0",
+        "phpseclib/phpseclib": "~3.0",
+        "phpmailer/phpmailer": "^7.0"
+    }
+}
