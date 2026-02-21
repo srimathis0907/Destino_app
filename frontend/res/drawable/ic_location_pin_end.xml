@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0">
+
+    <path
+        android:name="pin_path"
+        android:fillColor="#A2755E"
+        android:pathData="M9,2 C6,2 4,4 4,7 L4,17 C4,20 6,22 9,22 L13,22 C17,22 19,20 19,17 L19,7 C19,4 17,2 13,2 L9,2 z M9,4 L13,4 C16,4 17,5 17,7 L17,17 C17,19 16,20 13,20 L9,20 C7,20 6,19 6,17 L6,7 C6,5 7,4 9,4 z" />
+
+</vector>

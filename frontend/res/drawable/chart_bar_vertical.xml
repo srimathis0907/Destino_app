@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="150dp"
+    android:viewportWidth="200"
+    android:viewportHeight="150">
+
+    <!-- Grid Lines -->
+    <path android:strokeColor="#EEEEEE" android:strokeWidth="1" android:pathData="M 10,25 L 190,25"/>
+    <path android:strokeColor="#EEEEEE" android:strokeWidth="1" android:pathData="M 10,50 L 190,50"/>
+    <path android:strokeColor="#EEEEEE" android:strokeWidth="1" android:pathData="M 10,75 L 190,75"/>
+    <path android:strokeColor="#EEEEEE" android:strokeWidth="1" android:pathData="M 10,100 L 190,100"/>
+    <path android:strokeColor="#EEEEEE" android:strokeWidth="1" android:pathData="M 10,125 L 190,125"/>
+
+    <!-- Data Bars -->
+    <path
+        android:fillColor="#00B5B0"
+        android:pathData="M 30,70 v 60 h 25 V 70 Z"/>
+    <path
+        android:fillColor="#00B5B0"
+        android:pathData="M 70,40 v 90 h 25 V 40 Z"/>
+    <path
+        android:fillColor="#00B5B0"
+        android:pathData="M 110,90 v 40 h 25 V 90 Z"/>
+    <path
+        android:fillColor="#00B5B0"
+        android:pathData="M 150,110 v 20 h 25 V 110 Z"/>
+
+</vector>

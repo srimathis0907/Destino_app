@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transport_options">
+        <item>Train</item>
+        <item>Bus</item>
+        <item>Flight</item>
+
+    </string-array>
+    <string-array name="restaurant_options">
+        <item>Standard</item>
+        <item>High Standard</item>
+        <item>Low Budget</item>
+    </string-array>
+    <string-array name="hotel_options">
+        <item>Standard</item>
+        <item>High Standard</item>
+        <item>Low Budget</item>
+    </string-array>
+    <string-array name="fuel_types">
+        <item>Petrol</item>
+        <item>Diesel</item>
+        <item>Electric</item>
+    </string-array>
+</resources>

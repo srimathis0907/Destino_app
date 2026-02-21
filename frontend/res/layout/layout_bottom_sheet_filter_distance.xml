@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by Distance"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/filter_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radio_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show All"
+            android:checked="true"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio_1km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Under 1 km"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio_3km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 km to 3 km"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio_over_3km"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Over 3 km"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+</LinearLayout>

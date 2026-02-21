@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_itinerary_spot"
+    android:paddingStart="12dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="4dp"
+    android:paddingBottom="8dp"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:id="@+id/main_spot_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/itinerary_spot_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:text="Golden Temple (Harmandir Sahib)" />
+
+        <ImageButton
+            android:id="@+id/btn_find_nearby_spot"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Find nearby places for this spot"
+            android:src="@drawable/ic_add_circle_outline"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_remove_spot"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Remove this spot"
+            android:src="@drawable/ic_remove_circle_outline"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nearby_places_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_spot_content"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:paddingStart="8dp"/>
+
+</RelativeLayout>
